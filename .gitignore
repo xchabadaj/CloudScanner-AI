@@ -1,0 +1,23 @@
+# Scan outputs (contain real AWS account data — never publish),
+# but keep the empty runs/ folder in the repo
+runs/*
+!runs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local AWS credentials — never commit
+.aws/
+*.pem
+*.key
+credentials
